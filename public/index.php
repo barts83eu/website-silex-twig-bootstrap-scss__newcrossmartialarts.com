@@ -21,53 +21,23 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 // > index
 $app->get('/', function() use ($app){
   return $app['twig']->render('index.twig', array(
-        'name' => 'nothing',
+        'name' => 'index',
     ));
 });
 
-// > submit
-$app->get('/submit', function() use ($app){
-  return $app['twig']->render('submit.twig', array(
-        'name' => 'submit',
+// > members
+$app->get('/members', function() use ($app){
+  return $app['twig']->render('members.twig', array(
+        'name' => 'members',
     ));
 });
 
-// > carousel
-$app->get('/carousel', function() use ($app){
-  return $app['twig']->render('ui/carousel.twig', array(
-        'name' => 'carousel',
+// > members
+$app->get('/calendar', function() use ($app){
+  return $app['twig']->render('calendar.twig', array(
+        'name' => 'calednar',
     ));
 });
-
-// > carousel2 - swipe.js
-$app->get('/carousel2', function() use ($app){
-  return $app['twig']->render('ui/carousel2.twig', array(
-        'name' => 'carousel2 swipe.js',
-    ));
-});
-
-// > accordion
-$app->get('/accordion', function() use ($app){
-  return $app['twig']->render('ui/accordion.twig', array(
-        'name' => 'accordion',
-    ));
-});
-
-// > loader
-$app->get('/loader', function() use ($app){
-  return $app['twig']->render('ui/loader.twig', array(
-        'name' => 'loader',
-    ));
-});
-
-
-$app->get('/hello/{name}/', function ($name) use ($app) {
-    return $app['twig']->render('index.twig', array(
-        'name' => $name,
-    ));
-});
-
-
 
 
 $app->run();
