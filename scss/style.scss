@@ -1,0 +1,48 @@
+@import 'compass';
+
+div {
+  //@include box-shadow;
+
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+#wrap {
+  @include transition(opacity 2s);
+  @include opacity(0);
+
+  &.loaded {
+    @include opacity(1);
+  }
+}
+
+.sonic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid #fff;
+  margin: -50px;
+  //background: #ccc !important;
+}
+
+
+.swipe {
+  padding-bottom:20px;
+}
+
+.swipe li div,
+.swipe div div div {
+  margin:0 10px;
+  padding:50px 10px;
+  background:#1db1ff;
+  font-weight:bold;
+  color:#fff;
+  font-size:20px;
+  text-align:center;
+}
