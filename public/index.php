@@ -43,8 +43,8 @@ $app->get('/map', function() use ($app){
     ));
 });
 
-// > map
-$app->get('/map', function() use ($app){
+// > gallery
+$app->get('/gallery', function() use ($app){
   return $app['twig']->render('gallery.twig');
 });
 
