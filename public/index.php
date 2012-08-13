@@ -4,9 +4,6 @@ $app = new Silex\Application();
 //$app['debug'] = true;
 
 
-
-
-
 ///////////////////////////// VIEWS definitions + routing
 
 /// registering providers
@@ -47,6 +44,8 @@ $app->get('/map', function() use ($app){
 });
 
 // > map
-$app->get('/gallery', function() use ($app){ return $app['twig']->render('gallery.twig'); });
+$app->get('/map', function() use ($app){
+  return $app['twig']->render('gallery.twig');
+});
 
 $app->run();
