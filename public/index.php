@@ -13,8 +13,6 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 
 
 
-
-
 // > index
 $app->get('/', function() use ($app){
   return $app['twig']->render('index.twig', array(

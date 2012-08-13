@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" /> -->
   <link href="assets/css/docs.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
-
+  <link rel="stylesheet" href="assets/css/plugins/ticker-style.css" />
 
 
   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -41,9 +41,9 @@
     <!-- Le javascript 1/2
   ================================================== -->
   <script src="assets/js/ui/sonic.js"></script>
-
   <script src="assets/modernizr/modernizr.custom.min.js"></script>
-
+  <script src="assets/js/ui/jquery.transit.min.js"></script>
+  <script src="assets/js/ui/jquery.ticker.js"></script>
 
   <!-- Le fav and touch icons -->
   <link rel="shortcut icon" href="assets/ico/favicon.ico">
@@ -73,13 +73,14 @@
           <a class="brand" href="#">New Cross Martial Arts</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li ><a href="http://twitter.com/NewCrossJudo">tw @NewCrossJudo</a></li>
-              <li ><a href="http://twitter.com/MillwallJudo">tw @MillwallJudo</a></li>
-              <li><a href="http://www.facebook.com/pages/New-cross-martial-arts/193661187315661">NCMA on facebook</a></li>
-              <li><a href="http://newcrossjudo.onsport.com">newcrossjudo.onsport.com</a></li>
-              <li><a href="https://plus.google.com/u/0/100753612719060742108/">google+</a></li>
-              <li><a href="mailto:info@newcrossmartialarts.com">info@newcrossmartialarts.com</a></li>
+              <li ><a href="./gallery">gallery</a></li>
+              <li ><a href="./map">map & address</a></li>
+              <li ><a href="./members">members</a></li>
+              <li ><a href="./calendar">calendar</a></li>
+              <li><a href="http://www.facebook.com/pages/New-cross-martial-arts/193661187315661">facebook page</a></li>
+
             </ul>
+
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -90,13 +91,22 @@
     <div class="container">
       {% block content %}{% endblock %}
 
-
       <footer class="footer">
-        <p>&copy; New Cross Martial Arts 2012 </p>
+         <div class="row">
+              <div class="span4">
+                  <p>&copy; New Cross Martial Arts 2012 </p>
+              </div>
+              <div class="span4">
+                  <img src="" alt="">
+              </div>
+             <div class="span4">
+                This site is sponsored by: <br>
+                  <img src="assets/images/sponsors/silgar-logo.png" width="120px" height="120px">
+             </div>
+        </div>
       </footer>
 
     </div>
-
 
 
 
@@ -109,7 +119,8 @@
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+  <!--
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script> -->
   <script src="js/libs/bootstrap/bootstrap.min.js"></script>
 
   <script type="text/javascript">
@@ -128,7 +139,6 @@
 
   <script src="http://platform.twitter.com/widgets.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="assets/js/ui/jquery.transit.min.js"></script>
 
   <!-- // <script src="assets/js/google-code-prettify/prettify.js"></script> -->
   <script src="assets/js/bootstrap-transition.js"></script>

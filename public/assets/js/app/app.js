@@ -1,5 +1,6 @@
 $('.carousel').carousel();
 $(".collapse").collapse();
+//$('#js-news').ticker();
 
 function fadeUp(){
   $('#wrap').addClass('loaded');
@@ -17,3 +18,14 @@ $(window).on('load', function(){
 });
 
 var ui_tr_end;  // transition ends
+
+// cross domain feeds dont work yet
+// $(function () {
+//     $('#js-news').ticker({
+//         htmlFeed: false,
+//         ajaxFeed: true,
+//         feedUrl: 'https://api.twitter.com/1/statuses/user_timeline.rss?screen_name=NewCrossJudo',
+//         feedType: 'xml'
+//     });
+// });
+
