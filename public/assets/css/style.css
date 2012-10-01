@@ -1,1 +1,44 @@
-html,body{height:100%}body{position:relative}#wrap{-webkit-transition:opacity 2s;-moz-transition:opacity 2s;-ms-transition:opacity 2s;-o-transition:opacity 2s;transition:opacity 2s;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);opacity:0}#wrap.loaded{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);opacity:1}.sonic{position:absolute;top:50%;left:50%;border:1px solid #fff;margin:-50px}.swipe{padding-bottom:20px}.swipe li div,.swipe div div div{margin:0 10px;padding:50px 10px;background:#1db1ff;font-weight:bold;color:#fff;font-size:20px;text-align:center}
+html, body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+#wrap {
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -ms-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+#wrap.loaded {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.sonic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid #fff;
+  margin: -50px;
+}
+
+.swipe {
+  padding-bottom: 20px;
+}
+
+.swipe li div,
+.swipe div div div {
+  margin: 0 10px;
+  padding: 50px 10px;
+  background: #1db1ff;
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
