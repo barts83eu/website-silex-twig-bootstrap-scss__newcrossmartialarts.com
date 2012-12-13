@@ -4,12 +4,17 @@ $app = new Silex\Application();
 //$app['debug'] = true;
 
 
+
+
+
 ///////////////////////////// VIEWS definitions + routing
 
 /// registering providers
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/../views',
 ));
+
+
 
 
 
@@ -41,9 +46,20 @@ $app->get('/map', function() use ($app){
     ));
 });
 
-// > gallery
-$app->get('/gallery', function() use ($app){
-  return $app['twig']->render('gallery.twig');
+// > freetaster
+$app->get('/beginnercourse', function() use ($app){
+  return $app['twig']->render('beginnercourse.twig', array(
+        'name' => 'map',
+    ));
 });
+
+
+// > gallery
+$app->get('/gallery', function() use ($app){ return $app['twig']->render('gallery.twig'); });
+
+
+// > gallery
+$app->get('/merchandise', function() use ($app){ return $app['twig']->render('merchendise.twig'); });
+
 
 $app->run();
