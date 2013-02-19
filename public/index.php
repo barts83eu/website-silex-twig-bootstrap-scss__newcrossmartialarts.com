@@ -46,20 +46,22 @@ $app->get('/map', function() use ($app){
     ));
 });
 
-// > freetaster
+// > beginnercourse
 $app->get('/beginnercourse', function() use ($app){
   return $app['twig']->render('beginnercourse.twig', array(
         'name' => 'map',
     ));
 });
 
-
 // > gallery
 $app->get('/gallery', function() use ($app){ return $app['twig']->render('gallery.twig'); });
 
-
-// > gallery
+// > merchendise
 $app->get('/merchandise', function() use ($app){ return $app['twig']->render('merchendise.twig'); });
+
+// > randori
+$app->get('/randori', function() use ($app){ return $app['twig']->render('randori.twig'); });
+
 
 
 $app->run();
